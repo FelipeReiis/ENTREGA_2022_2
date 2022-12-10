@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  color: $GRAY;
+}
+
+.App {
+  @include margin-page;
+
+  @media #{$BREAKPOINT-TABLET} {
+    min-height: 68vh;
+  }
+
+  @media #{$BREAKPOINT-DESK} {
+    min-height: 0;
+  }
+}
